@@ -1,4 +1,4 @@
-guide.bash.academy
-==================
+The website of the handbook of quantum machine learning
+======================================================
 
-The https://guide.bash.academy website
+From the https://guide.bash.academy website...
