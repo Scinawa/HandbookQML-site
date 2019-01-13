@@ -1,13 +1,16 @@
 # Site settings
-title: The Bash Guide
-email: lhunath@lyndir.com
+title: Handbook of Quantum Machine Learning
+email: scinawa@luongo.pro
 description: >
-  A complete guide for newcomers and advanced users to correct usage and deep understanding of the bash shell language.
+  The online resource for doing quantum machine learning.
 baseurl: ""
-url: "https://guide.bash.academy"
-twitter_username: lhunath
-github_username:  lhunath
+url: "https://luongo.pro/qml"
+twitter_username: scinawa
+github_username:  scinawa
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude:
+  - vendor/bundle

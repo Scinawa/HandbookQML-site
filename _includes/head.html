@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css#1">
-    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.url}}/css/normalize.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url}}/css/main.css#1">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ site.url}}/css/responsive.css"> -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/vendor/prefixfree.min.js"></script>
+    <script src="{{ site.url}}/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="{{ site.url}}/js/vendor/prefixfree.min.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML : {scale:130 },
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  TeX: {
+    Macros: {
+      bra: ["{\\langle #1 |}", 1],
+      ket: ["{| #1 \\rangle }",1],
+      braket: ['{\\langle #1 \\rangle }', 1],
+      norm: ["\\left\\lVert #1 \\right\\rVert", 1] 
+}
+ }
+
+
+});
+</script>
+
 </head>

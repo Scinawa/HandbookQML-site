@@ -3,11 +3,16 @@
     {% include head.html %}
     <body id="{{ page.id }}">
 
-        {% if page.editable or page.editable == null %}
+<!---        {% if page.editable or page.editable == null %}
         <a class="page-edit fixed" href="https://prose.io/#lhunath/guide.bash.academy/edit/gh-pages/{{ page.path }}">[edit this page]</a>
-        {% endif %}
+        {% endif %} -->
 
-        <header data-stellar-background-ratio="0.4">
+	{% if page.editable or page.editable == null %}
+        <a class="page-edit fixed" href="https://prose.io/#Scinawa/HandbookQML/edit/gh-pages/{{ page.path }}">[edit this page]</a>
+        {% endif %} 
+
+
+        <header data-stellar-background-ratio="0.2">
             <div>
                 <h1>{{ page.title }}</h1>
                 <h2>{{ page.subtitle }}</h2>
@@ -37,18 +42,6 @@
         <script src="/js/vendor/toc.bower.min.js"></script>
         <script src="/js/main.js"></script>
 
-        <script async defer src="https://static.factlink.com/lib/dist/factlink_loader.min.js"></script>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-24338692-4', 'bash.academy');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
-
-        </script>
     </body>
 </html>
